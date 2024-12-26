@@ -12,24 +12,6 @@ RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir jupyter \
     && pip install --no-cache-dir -r requirements.txt
 
-RUN apt-get update && \
-    apt-get install -y curl && \
-    apt-get install -y build-essential && \
-    apt-get clean 
-
-# Install Node.js (version 20 in this case)
-RUN curl -fsSL https://deb.nodesource.com/setup_20.x | bash - && \
-    apt-get install -y nodejs
-
-RUN npm install -g ijavascript
-# Set up the IJavascript kernel
-RUN ijsinstall
-
-COPY package.json /app/
-
-# Install npm dependencies based on package-lock.json
-RUN npm install
-
 # Expose the port Jupyter Notebook will run on
 EXPOSE 8888
 
