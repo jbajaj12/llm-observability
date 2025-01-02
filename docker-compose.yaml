@@ -10,10 +10,10 @@ services:
       - ./notebooks:/app/notebooks  # Mount the local 'notebooks' folder to container
     environment:
       - JUPYTER_TOKEN=1234  # Optional: Set a custom Jupyter token
-      - DD_API_KEY= 
+      - DD_API_KEY=${DD_API_KEY}
       - DD_SITE=datadoghq.com
-      - DD_TRACE_DEBUG = true
-      - DD_LLMOBS_AGENTLESS_ENABLED=1
+      - DD_TRACE_DEBUG=TRUE
+       #DD_LLMOBS_AGENTLESS_ENABLED=1
       - DD_LLMOBS_ML_APP="onboarding-quickstart"
-      - OPENAI_API_KEY= 
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
     command: ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
