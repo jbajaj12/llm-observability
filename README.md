@@ -62,7 +62,8 @@ deactivate
 
 
 ## Commands Used:
-docker ps
+
+```docker ps
 jupyter server list
 docker exec -it python_jupyter /bin/bash\ 
 docker exec -it python_jupyter /bin/bash\\
@@ -98,3 +99,4 @@ docker docker exec -it python-jupyter /bin/bash
 docker exec -it python-jupyter /bin/bash
 docker ps
 docker exec -it python_jupyter /bin/bash
+```
