@@ -58,3 +58,43 @@ When you're done with the tutorials, deactivate your virtualenv and return to yo
 ```bash
 deactivate
 ```
+
+
+
+## Commands Used:
+docker ps
+jupyter server list
+docker exec -it python_jupyter /bin/bash\ 
+docker exec -it python_jupyter /bin/bash\\
+ç
+docker ps
+docker exec -it python_jupyter /bin/bash
+docker compose build
+docker-compose up
+cd .
+cd ..
+cd Documents
+clear
+ls
+clear
+cd Github
+ls
+cd DD
+ls
+cd llm-observability
+ls
+clear
+cd .
+cd ..
+cd llm-observability
+docker-compose build --no-cache\
+
+docker-compose up -d\
+
+docker ps -a
+docker ps
+docker ps
+docker docker exec -it python-jupyter /bin/bash
+docker exec -it python-jupyter /bin/bash
+docker ps
+docker exec -it python_jupyter /bin/bash
