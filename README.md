@@ -15,15 +15,9 @@ For a detailed instrumentation guide, see [Trace an LLM Application](https://doc
 - Feel free to update the `DD_LLMOBS_ML_APP` variable to any custom app name.
 - `DD_LLMOBS_AGENTLESS_ENABLED=1` is only required if the Datadog Agent is not running. If the agent is running in your production environment, make sure this environment variable is unset.
 
-#### 3. Install shared dependencies from the requirements.txt file:
+#### Launch Jupyter notebooks
 
-```bash
-pip install -r requirements.txt
-```
-
-#### 4. Launch Jupyter notebooks
-
-You can either start Jupyter on the command line (`jupyter notebook`) to use the web interface, or open your notebook from your preferred code editor (for example, VS Code) and run it there.
+Go to localhost:8888
 
 ## Notebooks
 
@@ -53,50 +47,12 @@ You can either start Jupyter on the command line (`jupyter notebook`) to use the
 
 ## Teardown
 
-When you're done with the tutorials, deactivate your virtualenv and return to your system's default Python env:
+When you're done with the tutorials:
 
-```bash
-deactivate
+```docker compose down
 ```
 
 
 
 ## Commands Used:
 
-```docker ps
-jupyter server list
-docker exec -it python_jupyter /bin/bash\ 
-docker exec -it python_jupyter /bin/bash\\
-ç
-docker ps
-docker exec -it python_jupyter /bin/bash
-docker compose build
-docker-compose up
-cd .
-cd ..
-cd Documents
-clear
-ls
-clear
-cd Github
-ls
-cd DD
-ls
-cd llm-observability
-ls
-clear
-cd .
-cd ..
-cd llm-observability
-docker-compose build --no-cache\
-
-docker-compose up -d\
-
-docker ps -a
-docker ps
-docker ps
-docker docker exec -it python-jupyter /bin/bash
-docker exec -it python-jupyter /bin/bash
-docker ps
-docker exec -it python_jupyter /bin/bash
-```
